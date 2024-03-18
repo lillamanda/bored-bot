@@ -1,0 +1,63 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0 1em;
+    padding: 1em;
+    color: #af7200;
+}
+
+html, 
+.activity-title, 
+.refresh-icon{
+    background-color: #1c1c1c;
+}
+
+body{
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+    color: #dbd0bc;
+    margin-bottom: 1.5em;
+}
+
+.activity-container{
+    position: relative;
+    border: 6px solid #af7200;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+}
+
+.activity-title{
+    top: -30px;
+    left: 10px;
+    position: absolute;
+    width: fit-content;
+    padding: 0.5em;
+    z-index: 1;
+    margin: 0;
+}
+
+.suggested-activity{
+    font-size: 1.5rem;
+    padding: 2em;
+    text-align: center;
+    user-select: none;
+}
+
+.refresh-icon{
+    position: absolute;
+    padding: 25px 10px;
+    bottom: -20px;
+    right: -20px;
+    z-index: 1;
+}
